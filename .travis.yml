@@ -1,0 +1,14 @@
+language: node_js
+node_js: node
+cache:
+  directories:
+  - node_modules
+env:
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: NSmrYQd8TTqstNBi6roO/HM+2YIhFhJE4NGDpry29TnKdxtrzOO2ErbcQbRbhtpLaNDNDava5KGgId29GkKairOmwz3gjHo4zGeTiTTGDNxNlA8K2ptgta066jBUXK0U85yenx7/12HuFXwIUpH7pap4uMspu9yzyqBDH9kLzpXBt43tw2N+f6PCVcFpuLTcsoY22nHP4MNCraqa9d1g0va/NcOyBHXPLEREUNFNvn7VGpEt5CIIjwX4tjN4xPGBPe3gtG573m+PYvMf0xWgWTv0E3RHR3n1GN8bXHbcEY1jouNLT5p+3XF5t/S8gnuT0aFASv5ieFDjQ0Kq+5tkHPDEMfSGeBwJtrCHRyAwnhJgbFqm2scYIlUciDlsgoAgVlyzi80r7RLema8KOvQowJLNqc5jairJ4daj23Q2pL3dzPtbgMlK0Z+Z8YpgVInfxVOCO8mjVcnbmp7c7Rsz4+XxUaoCMJkXvP/0NKHYfumK4GmJTiU+98kPDH7zI4xvZc9og/fuGya+U2EKupqAavPLHNU2pzNSBFa4wUDg+gTguq1kAc++76/qqAjKG4smaQPeE8V+67GMx7oy+ueiWl3Mz72JJj2UEz4LEEgY/FmMH/IabO9XVum0+PNNiPT/4GWm9Wn+fu17TS1oZaUAe+h9m38A5gGMCw6ZIHRbED4=
+  app: react-testing-travis-heroku
+  on:
+    repo: benparman/react-testing-travis-heroku
